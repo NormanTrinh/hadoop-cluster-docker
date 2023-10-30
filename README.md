@@ -95,3 +95,7 @@ sudo ./start-container.sh 5
 
 do 5~6 like section A
 
+### Additional references:
+- https://www.linode.com/docs/guides/how-to-install-and-set-up-hadoop-cluster/
+- https://stackoverflow.com/a/48170409/18448121
+- https://viblo.asia/p/tim-hieu-ve-hadoop-hdfs-hadoop-mapreduce-ly-thuyet-5pPLkjNZJRZ
