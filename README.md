@@ -96,6 +96,12 @@ sudo ./start-container.sh 5
 do 5~6 like section A
 
 ### Additional references:
-- https://www.linode.com/docs/guides/how-to-install-and-set-up-hadoop-cluster/
-- https://stackoverflow.com/a/48170409/18448121
-- https://viblo.asia/p/tim-hieu-ve-hadoop-hdfs-hadoop-mapreduce-ly-thuyet-5pPLkjNZJRZ
+- Theory and setup:
+  - https://www.linode.com/docs/guides/how-to-install-and-set-up-hadoop-cluster/
+  - https://stackoverflow.com/a/48170409/18448121
+  - https://viblo.asia/p/tim-hieu-ve-hadoop-hdfs-hadoop-mapreduce-ly-thuyet-5pPLkjNZJRZ
+- Configs hadoop 3.2.4:
+  - [core-default.xml](https://hadoop.apache.org/docs/r3.2.4/hadoop-project-dist/hadoop-common/core-default.xml)
+  - [hdfs-default.xml](https://hadoop.apache.org/docs/r3.2.4/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml)
+  - [mapred-default.xml](https://hadoop.apache.org/docs/r3.2.4/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml)
+  - [yarn-default.xml](https://hadoop.apache.org/docs/r3.2.4/hadoop-yarn/hadoop-yarn-common/yarn-default.xml)
