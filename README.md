@@ -114,4 +114,4 @@ Run `docker network inspect` on the network (e.g. `hadoop`) to find the IP the h
   - [mapred-default.xml](https://hadoop.apache.org/docs/r3.2.4/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml)
   - [yarn-default.xml](https://hadoop.apache.org/docs/r3.2.4/hadoop-yarn/hadoop-yarn-common/yarn-default.xml)
 - Sources:
-  - https://github.com/big-data-europe/docker-hadoop
+  - https://github.com/big-data-europe/docker-hadoop (if you are using this repo, you can encounter `Namenode is in safe mode`, solved [here](https://github.com/big-data-europe/docker-hadoop/issues/81#issuecomment-1111542358))
