@@ -94,6 +94,15 @@ sudo ./start-container.sh 5
 
 do 5~6 like section A
 
+### Inspect
+
+Run `docker network inspect` on the network (e.g. `hadoop`) to find the IP the hadoop interfaces are published on. Access these interfaces with the following URLs:
+
+- Namenode: http://<dockerhadoop_IP_address>:9870/dfshealth.html#tab-overview
+- Datanode: http://<dockerhadoop_IP_address>:9864/
+- Nodemanager: http://<dockerhadoop_IP_address>:8042/node
+- Resource manager: http://<dockerhadoop_IP_address>:8088/
+
 ### Additional references:
 - Theory and setup:
   - https://www.linode.com/docs/guides/how-to-install-and-set-up-hadoop-cluster/
@@ -104,3 +113,5 @@ do 5~6 like section A
   - [hdfs-default.xml](https://hadoop.apache.org/docs/r3.2.4/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml)
   - [mapred-default.xml](https://hadoop.apache.org/docs/r3.2.4/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml)
   - [yarn-default.xml](https://hadoop.apache.org/docs/r3.2.4/hadoop-yarn/hadoop-yarn-common/yarn-default.xml)
+- Sources:
+  - https://github.com/big-data-europe/docker-hadoop
