@@ -8,7 +8,7 @@ Based on [kiwenlau's repo](https://github.com/kiwenlau/hadoop-cluster-docker) to
 ##### 1. pull docker image
 
 ```
-sudo docker pull danchoi2001/hadoop:1.0
+docker pull danchoi2001/hadoop:1.0
 ```
 
 ##### 2. clone github repository
@@ -20,14 +20,14 @@ git clone https://github.com/TianHuijun/hadoop-cluster-docker.git
 ##### 3. create hadoop network
 
 ```
-sudo docker network create --driver=bridge hadoop
+docker network create --driver=bridge hadoop
 ```
 
 ##### 4. start container
 
 ```
 cd hadoop-cluster-docker
-sudo ./start-container.sh
+./start-container.sh
 ```
 
 **output:**
@@ -77,7 +77,7 @@ do 1~3 like section A
 ##### 2. rebuild docker image
 
 ```
-sudo ./resize-cluster.sh 5
+./resize-cluster.sh 5
 ```
 - specify parameter > 1: 2, 3..
 - this script just rebuild hadoop image with different **slaves** file, which pecifies the name of all slave nodes
@@ -86,7 +86,7 @@ sudo ./resize-cluster.sh 5
 ##### 3. start container
 
 ```
-sudo ./start-container.sh 5
+./start-container.sh 5
 ```
 - use the same parameter as the step 2
 
