@@ -94,6 +94,11 @@ bash ./start-container.sh 5
 
 do 5~6 like section A
 
+### An easier installation, no need to manually set the number of nodes like above
+```
+bash ./start-container.sh <number_of_nodes>
+```
+
 ### Inspect
 
 Run `docker network inspect` on the network (e.g. `hadoop`) to find the IP the hadoop interfaces are published on. Access these interfaces with the following URLs:

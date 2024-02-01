@@ -1,8 +1,14 @@
 #!/bin/bash
 
+# Create network if not exists
+docker network inspect hadoop >/dev/null 2>&1 || \
+    docker network create --driver bridge hadoop
+
 # the default node number is 3
 N=${1:-3}
 
+# resize cluster by number of nodes
+bash resize-cluster.sh $N
 
 # start hadoop master container
 docker rm -f hadoop-master &> /dev/null

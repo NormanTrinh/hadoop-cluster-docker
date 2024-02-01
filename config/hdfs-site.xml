@@ -14,4 +14,13 @@
         <name>dfs.replication</name>
         <value>5</value>
     </property>
+    <property>
+        <name>dfs.blocksize</name>
+        <value>134217728</value>
+    </property>
+    <property>
+        <name>dfs.namenode.handler.count</name>
+        <value>46</value>
+        <description>RPC handler count is set to 20 * log2(Cluster Size)</description>
+    </property>
 </configuration>
