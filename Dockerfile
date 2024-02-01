@@ -16,11 +16,11 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ENV HADOOP_HOME=/usr/local/hadoop 
 ENV PATH=$PATH:/usr/local/hadoop/bin:/usr/local/hadoop/sbin
 
-# ENV HDFS_NAMENODE_USER="root"
-# ENV HDFS_DATANODE_USER="root"
-# ENV HDFS_SECONDARYNAMENODE_USER="root"
-# ENV YARN_RESOURCEMANAGER_USER="root"
-# ENV YARN_NODEMANAGER_USER="root"
+ENV HDFS_NAMENODE_USER="root"
+ENV HDFS_DATANODE_USER="root"
+ENV HDFS_SECONDARYNAMENODE_USER="root"
+ENV YARN_RESOURCEMANAGER_USER="root"
+ENV YARN_NODEMANAGER_USER="root"
 
 # ssh without key
 RUN ssh-keygen -t rsa -f ~/.ssh/id_rsa -P '' && \
