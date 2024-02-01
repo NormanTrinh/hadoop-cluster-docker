@@ -1,5 +1,5 @@
 ## Run Hadoop Cluster within Docker Containers
-Based on [kiwenlau's repo](https://github.com/kiwenlau/hadoop-cluster-docker) to build with hadoop 3.2.4
+Based on [kiwenlau's repo](https://github.com/kiwenlau/hadoop-cluster-docker) to build with hadoop 3.3.6
 
 <img src="one-master-with-two-slaves.png" alt="drawing" width="500"/>
 
