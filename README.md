@@ -5,7 +5,7 @@ Based on [kiwenlau's repo](https://github.com/kiwenlau/hadoop-cluster-docker) to
 
 ### 3 Nodes Hadoop Cluster
 
-##### 1. pull docker image
+##### 1. pull docker image (Not recommended)
 
 ```
 docker pull danchoi2001/hadoop:1.0
