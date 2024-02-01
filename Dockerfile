@@ -1,15 +1,15 @@
-FROM ubuntu:18.04
+FROM ubuntu:22.04
 
 WORKDIR /root
 
 # install openssh-server, openjdk and wget
 RUN apt-get update && apt-get install -y --no-install-recommends openssh-server openjdk-8-jdk wget nano && rm -rf /var/lib/apt/lists/*
 
-# install hadoop 3.2.4
-RUN wget https://dlcdn.apache.org/hadoop/common/hadoop-3.2.4/hadoop-3.2.4.tar.gz && \
-    tar -xzvf hadoop-3.2.4.tar.gz && \
-    mv hadoop-3.2.4 /usr/local/hadoop && \
-    rm hadoop-3.2.4.tar.gz
+# install hadoop 3.3.6
+RUN wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz && \
+    tar -xzvf hadoop-3.3.6.tar.gz && \
+    mv hadoop-3.3.6 /usr/local/hadoop && \
+    rm hadoop-3.3.6.tar.gz
 
 # set environment variable
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 
